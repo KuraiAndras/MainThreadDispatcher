@@ -28,7 +28,7 @@ jobs:
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
 
       - name: Publish MainThreadDispatcher.Unity to openupm
-        uses: Klemensas/action-autotag@stable
+        uses: Klemensas/action-autotag@1.1.1
         with:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           root: "MainThreadDispatcher.Unity/Assets/MainThreadDispatcher.Unity"
