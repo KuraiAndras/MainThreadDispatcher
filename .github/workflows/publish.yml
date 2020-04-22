@@ -16,12 +16,13 @@ jobs:
         uses: rohith/publish-nuget@v2.3.0
         with:
           PROJECT_FILE_PATH: MainThreadDispatcher/MainThreadDispatcher.csproj
-          TAG_COMMIT: "false"
+          TAG_COMMIT: "true"
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
 
       - name: Publish Injecter to nuget.org
         uses: rohith/publish-nuget@v2.3.0
         with:
           PROJECT_FILE_PATH: MainThreadDispatcher.Wpf/MainThreadDispatcher.Wpf.csproj
-          TAG_COMMIT: "false"
+          TAG_COMMIT: "true"
+          TAG_FORMAT: wpf*
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
