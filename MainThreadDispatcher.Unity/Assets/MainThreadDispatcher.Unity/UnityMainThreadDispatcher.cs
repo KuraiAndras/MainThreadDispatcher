@@ -15,6 +15,8 @@ namespace MainThreadDispatcher.Unity
 
         public void Invoke(Action action)
         {
+            if (action is null) throw new ArgumentNullException(nameof(action));
+
             if (CurrentThreadId == _mainThreadId)
             {
                 action();
@@ -27,6 +29,8 @@ namespace MainThreadDispatcher.Unity
 
         public Task InvokeAsync(Action action)
         {
+            if (action is null) throw new ArgumentNullException(nameof(action));
+
             if (CurrentThreadId == _mainThreadId)
             {
                 action();
@@ -43,6 +47,8 @@ namespace MainThreadDispatcher.Unity
 
         public Task<T> InvokeAsync<T>(Func<T> func)
         {
+            if (func is null) throw new ArgumentNullException(nameof(func));
+
             if (CurrentThreadId == _mainThreadId) return Task.FromResult(func());
 
             var task = new Task<T>(func);
