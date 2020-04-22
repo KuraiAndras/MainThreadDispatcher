@@ -24,7 +24,7 @@ jobs:
         with:
           PROJECT_FILE_PATH: MainThreadDispatcher.Wpf/MainThreadDispatcher.Wpf.csproj
           TAG_COMMIT: "true"
-          TAG_FORMAT: wpf*
+          TAG_FORMAT: wpf/*
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
 
       - name: Publish MainThreadDispatcher.Unity to openupm
@@ -32,4 +32,4 @@ jobs:
         with:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           package_root: "MainThreadDispatcher.Unity/Assets/MainThreadDispatcher.Unity"
-          tag_prefix: "unity"
+          tag_prefix: "unity/"
