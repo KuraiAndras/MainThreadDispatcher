@@ -12,17 +12,23 @@ jobs:
     steps:
       - uses: actions/checkout@v2.1.0
 
-      - name: Publish Injecter to nuget.org
+      - name: Publish MainThreadDispatcher to nuget.org
         uses: rohith/publish-nuget@v2.3.0
         with:
           PROJECT_FILE_PATH: MainThreadDispatcher/MainThreadDispatcher.csproj
           TAG_COMMIT: "true"
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
 
-      - name: Publish Injecter to nuget.org
+      - name: Publish MainThreadDispatcher.Wpf to nuget.org
         uses: rohith/publish-nuget@v2.3.0
         with:
           PROJECT_FILE_PATH: MainThreadDispatcher.Wpf/MainThreadDispatcher.Wpf.csproj
           TAG_COMMIT: "true"
           TAG_FORMAT: wpf*
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+
+      - name: Publish MainThreadDispatcher.Unity to openupm
+        uses: Klemensas/action-autotag@stable
+        with:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          root: "MainThreadDispatcher.Unity/Assets/MainThreadDispatcher.Unity"
