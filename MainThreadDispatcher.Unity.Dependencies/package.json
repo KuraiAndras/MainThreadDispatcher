@@ -1,7 +1,7 @@
 {
-    "name": "com.mainthreaddispatcher.unity",
-    "version": "1.1.1",
-    "displayName": "Unity Main Thread Dispatcher",
+    "name": "com.mainthreaddispatcher.unity.dependencies",
+    "version": "1.0.0",
+    "displayName": "Unity Main Thread Dispatcher Dependencies",
     "author": {
         "name": "Kurai András",
         "email": "k.andras9642@gmail.com",

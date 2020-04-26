@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="*.meta" />
+    <PackageReference Include="MainThreadDispatcher" Version="1.0.0" />
+    <None Update="package.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="MainThreadDispatcher.Unity.Dependencies.asmdef" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <Target Name="Remove Dll" AfterTargets="AfterBuild">
+    <Delete Files="$(OutDir)/MainThreadDispatcher.Unity.Dependencies.dll" />
+    <Delete Files="$(OutDir)/MainThreadDispatcher.Unity.Dependencies.pdb" />
+  </Target>
+
+</Project>
