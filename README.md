@@ -36,6 +36,10 @@ public interface IMainThreadDispatcher
 
 # MainThreadDispatcher.Unity
 
+Since version 1.1.1 you need to provide the following dlls yourself:
+- MainThreadDispatcher
+
+
 [![openupm](https://img.shields.io/npm/v/com.mainthreaddispatcher.unity?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.mainthreaddispatcher.unity/)
 
 An implementation of the [IMainThreadDispatcher](https://github.com/KuraiAndras/MainThreadDispatcher) interface in Unity 3D
