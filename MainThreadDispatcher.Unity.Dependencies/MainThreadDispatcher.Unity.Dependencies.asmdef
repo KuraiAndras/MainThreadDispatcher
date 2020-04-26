@@ -1,13 +1,11 @@
 {
-    "name": "MainThreadDispatcher.Unity",
+    "name": "MainThreadDispatcher.Unity.Dependencies",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
-    "overrideReferences": true,
-    "precompiledReferences": [
-        "MainThreadDispatcher.dll"
-    ],
+    "overrideReferences": false,
+    "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],
