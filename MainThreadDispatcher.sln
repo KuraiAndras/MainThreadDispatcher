@@ -10,11 +10,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8E5C2F87-EF99-4C21-BEC9-2FDF4E8DEF65}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
 		LICENSE.md = LICENSE.md
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainThreadDispatcher.Unity.Dependencies", "MainThreadDispatcher.Unity.Dependencies\MainThreadDispatcher.Unity.Dependencies.csproj", "{DAD9A72F-20AD-4A30-9CCB-EA229C41AEEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainThreadDispatcher.Unity.Dependencies", "MainThreadDispatcher.Unity.Dependencies\MainThreadDispatcher.Unity.Dependencies.csproj", "{DAD9A72F-20AD-4A30-9CCB-EA229C41AEEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainThreadDispatcher.Xamarin.Forms", "MainThreadDispatcher.Xamarin.Forms\MainThreadDispatcher.Xamarin.Forms.csproj", "{D32A935E-1325-4DE4-B4C7-8C10DC3B6724}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +37,10 @@ Global
 		{DAD9A72F-20AD-4A30-9CCB-EA229C41AEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAD9A72F-20AD-4A30-9CCB-EA229C41AEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAD9A72F-20AD-4A30-9CCB-EA229C41AEEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32A935E-1325-4DE4-B4C7-8C10DC3B6724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32A935E-1325-4DE4-B4C7-8C10DC3B6724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32A935E-1325-4DE4-B4C7-8C10DC3B6724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32A935E-1325-4DE4-B4C7-8C10DC3B6724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
