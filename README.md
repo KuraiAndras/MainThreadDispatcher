@@ -33,6 +33,7 @@ public interface IMainThreadDispatcher
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Unity 3D | [![openupm](https://img.shields.io/npm/v/com.mainthreaddispatcher.unity?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.mainthreaddispatcher.unity/) |
 | WPF | [![Nuget](https://img.shields.io/nuget/v/MainThreadDispatcher.Wpf)](https://www.nuget.org/packages/MainThreadDispatcher.Wpf/)
+| Xamarin.Forms | [![Nuget](https://img.shields.io/nuget/v/MainThreadDispatcher.Xamarin.Forms)](https://www.nuget.org/packages/MainThreadDispatcher.Xamarin.Forms/)
 
 # MainThreadDispatcher.Unity
 
@@ -67,3 +68,7 @@ If you call UnityMainThreadDispatcherExtensions.Instance before the the GameObje
 If you call UnityMainThreadDispatcherExtensions.Instance for the first time from a thread other than the main unity thread, you will get an exception.
 
 If there are multiple instances in you scene, then when calling UnityMainThreadDispatcherExtensions.Instance it will cache the first it finds. Preferably you only want one instance of it in your application, having multiple does not provide any performance benefit
+
+# MainThreadDispatcher.Xamarin.Forms
+
+This package wraps around Xamarin.Essentials.MainThread, thus you need to [set up Xamarin.Essentials](https://docs.microsoft.com/en-us/xamarin/essentials/get-started?tabs=windows%2Candroid).
