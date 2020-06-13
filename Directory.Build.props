@@ -1,0 +1,13 @@
+<Project>
+    <PropertyGroup>
+        <LangVersion>8.0</LangVersion>
+        <IsPackable>true</IsPackable>
+        <Authors>Kurai András</Authors>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <RepositoryUrl>https://github.com/KuraiAndras/MainThreadDispatcher</RepositoryUrl>
+      </PropertyGroup>
+    
+      <ItemGroup>
+        <None Include="..\LICENSE.md" Pack="true" PackagePath="$(PackageLicenseFile)" />
+      </ItemGroup>
+</Project>

@@ -27,6 +27,14 @@ jobs:
           TAG_FORMAT: wpf/*
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
 
+      - name: Publish MainThreadDispatcher.Xamarin.Forms to nuget.org
+        uses: rohith/publish-nuget@v2.3.0
+        with:
+          PROJECT_FILE_PATH: MainThreadDispatcher.Xamarin.Forms/MainThreadDispatcher.Xamarin.Forms.csproj
+          TAG_COMMIT: "true"
+          TAG_FORMAT: xamarinforms/*
+          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+
       - name: Publish MainThreadDispatcher.Unity to openupm
         uses: Klemensas/action-autotag@1.2.3
         with:
