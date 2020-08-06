@@ -1,20 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFrameworks>net45;net472;netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
     <PackageId>MainThreadDispatcher.Wpf</PackageId>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
+    <UseWPF>true</UseWPF>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
     <Authors>Kurai András</Authors>
     <Description>MainThreadDispatcher implementation for WPF</Description>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="MainThreadDispatcher" Version="1.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="PresentationFramework" />
-    <Reference Include="WindowsBase" />
   </ItemGroup>
 
 </Project>

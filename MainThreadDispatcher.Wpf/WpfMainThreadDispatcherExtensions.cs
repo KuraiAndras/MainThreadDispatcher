@@ -2,20 +2,8 @@
 {
     public static class WpfMainThreadDispatcherExtensions
     {
-        private static bool _initialized;
-        private static IMainThreadDispatcher _dispatcher;
+        private static IMainThreadDispatcher? _dispatcher;
 
-        public static IMainThreadDispatcher Instance
-        {
-            get
-            {
-                if (_initialized) return _dispatcher;
-
-                _initialized = true;
-                _dispatcher = new WpfMainThreadDispatcher();
-
-                return _dispatcher;
-            }
-        }
+        public static IMainThreadDispatcher Instance => _dispatcher ??= new WpfMainThreadDispatcher();
     }
 }
