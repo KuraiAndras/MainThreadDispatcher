@@ -69,6 +69,10 @@ If you call UnityMainThreadDispatcherExtensions.Instance for the first time from
 
 If there are multiple instances in you scene, then when calling UnityMainThreadDispatcherExtensions.Instance it will cache the first it finds. Preferably you only want one instance of it in your application, having multiple does not provide any performance benefit
 
+# MainThreadDispatcher.WPF
+
+If you create the WpfMainThreadDispatcher instance on a thread other than the main thread it will not work. It is recommended to create a shared instance. You can achieve this with Dependency Injection or with eagerly creating an Instance with the provided extension class.
+
 # MainThreadDispatcher.Xamarin.Forms
 
 This package wraps around Xamarin.Essentials.MainThread, thus you need to [set up Xamarin.Essentials](https://docs.microsoft.com/en-us/xamarin/essentials/get-started?tabs=windows%2Candroid).
