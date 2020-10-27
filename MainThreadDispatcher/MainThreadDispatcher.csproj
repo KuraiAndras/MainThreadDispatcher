@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.0</TargetFramework>
+    <TargetFramework>netstandard1.3</TargetFramework>
     <PackageId>MainThreadDispatcher</PackageId>
     <Version>1.0.0</Version>
     <Description>Interface for various main thread dispatcher implementations</Description>
